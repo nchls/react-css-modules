@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --port 1337 --config webpack.config.js --colors --progress --inline --watch --hot --debug"
   },
   "author": "Ian Nicholas",
-  "repository": "https://bitbucket.org/cashstar/react-css-modules",
+  "repository": "https://github.com/nchls/react-css-modules",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.23.1",
