@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+.gridItem(@basis) {
+    flex-basis: @basis;
+    flex-grow: 1;
+}
+.gridItemSmall {
+    .gridItem(12em);
+}
