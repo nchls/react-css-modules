@@ -60,8 +60,8 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
-                            modules: true,
                             importLoaders: 1,
+                            modules: true,
                             localIdentName: '[name]_[local]'
                         }
                     },

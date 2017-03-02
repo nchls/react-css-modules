@@ -7,10 +7,12 @@
 }
 
 .columns {
-    composes: grid from "../../styles/utils.less";
+    composes: row from "../../styles/utils.less";
     background: #ddd;
 }
 .columnItem {
-    composes: gridItemSmall from "../../styles/utils.less";
-    padding: 5px;
+    composes: col-xs-12 from "../../styles/utils.less";
+    composes: col-sm-6 from "../../styles/utils.less";
+    composes: col-md-4 from "../../styles/utils.less";
+    padding-bottom: 1em;
 }

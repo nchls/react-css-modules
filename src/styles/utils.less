@@ -1,11 +1,20 @@
-.grid {
-    display: flex;
-    flex-flow: row wrap;
+@import "../../node_modules/bootstrap/less/mixins/grid-framework.less";
+@import "../../node_modules/bootstrap/less/mixins/grid.less";
+
+.row {
+  .make-row();
 }
-.gridItem(@basis) {
-    flex-basis: @basis;
-    flex-grow: 1;
+
+@grid-columns: 12;
+@grid-gutter-width: 1%;
+.make-grid-columns();
+.make-grid(xs);
+@media (min-width: 650px) {
+  .make-grid(sm);
 }
-.gridItemSmall {
-    .gridItem(12em);
+@media (min-width: 850px) {
+  .make-grid(md);
+}
+@media (min-width: 1050px) {
+  .make-grid(lg);
 }
